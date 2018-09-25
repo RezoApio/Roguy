@@ -20,6 +20,8 @@ def handle_keys(key):
         return {'move': (-1, 1)}
     elif key.vk == libtcod.KEY_KP3:
         return {'move': (1, 1)}
+    elif key.vk == libtcod.KEY_KP5: #Adding Stay option
+        return {'move': (0, 0)}
 
     if key.vk == libtcod.KEY_ENTER and key.lalt:
         # Alt+Enter: toggle full screen
